@@ -5,18 +5,19 @@ import Card from "./card";
 
 const Home = () => {
 	const datos = [{
-	texto:"esto es un texto"	
-	},
-	{texto:"esto es otro texto"
-
+	titulo:"esto es un texto",
+	image:"https://picsum.photos/200/200"
 	},
 
-	]
+
+
+]
 	return (
 		<>
            <Navbar/>
-         {datos.map((item,index)=>(<Card key={index} texto={item.texto}/>))}
-			
+	<div className="d-flex justify-content-center">
+         {datos.map((item,index)=>(<Card key={index} texto={item.titulo}/>))}
+		 </div>	
 		</>
 	);
 	
